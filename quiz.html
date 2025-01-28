@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: #f0f0f0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #45a049);
+            width: 0%;
+            transition: width 0.3s ease;
+            border-radius: 0 4px 4px 0;
+        }
+        .progress-message {
+            position: fixed;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .timer {
+            position: fixed;
+            top: 15px;
+            right: 20px;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1001;
+        }
+        .timer.warning {
+            background: #ffeeba;
+            color: #856404;
+        }
+        .timer.danger {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .section-nav {
+            position: fixed;
+            top: 15px;
+            left: 20px;
+            background: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1001;
+        }
+        .part {
+            margin-bottom: 40px;
+        }
+        .section {
+            margin-bottom: 30px;
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+        .passage {
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 5px;
+        }
+        .incorrect-answer {
+            color: #dc3545;
+            text-decoration: line-through;
+        }
+        .correct-answer {
+            color: #28a745;
+            font-weight: bold;
+        }
+        .answer-explanation {
+            margin-top: 5px;
+            padding: 8px;
+            background: #f8f9fa;
+            border-left: 3px solid #28a745;
+            font-size: 0.9em;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options div {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 0;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        button:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            background: #e9ffe9;
+            border-radius: 5px;
+            display: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        #error-message {
+            color: red;
+            padding: 20px;
+            text-align: center;
+            background: #fff3f3;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: none;
+        }
+        /* Add some spacing at the bottom for the result */
+        #quiz-container {
+            margin-bottom: 100px;
+            padding-top: 60px; /* Space for fixed header elements */
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="progress-message">You're halfway there! Keep going! 🌟</div>
+    <div class="section-nav">Section: <span id="section-indicator">1/1</span></div>
+    <div class="timer" id="timer">Time: 00:00</div>
+    <div id="quiz-container">Loading quiz...</div>
+    <div id="error-message"></div>
+    <button onclick="submitSection()" id="submit-btn">Submit Section</button>
+    <div id="result" class="result"></div>
+
+    <script>
+        let quizData;
+        let currentSection = 0;
+        let currentPart = 0;
+        let totalSections = 0;
+        let timerInterval;
+        let timeRemaining;
+        let messageShown = false;
+        let sectionScores = [];
+
+        // Load quiz data
+        fetch('quiz.json')
+            .then(response => response.json())
+            .then(data => {
+                quizData = data.quiz;
+                calculateTotalSections();
+                renderQuiz();
+                showCurrentSection();
+            })
+            .catch(error => {
+                document.getElementById('error-message').textContent = 
+                    'Error loading quiz: ' + error.message;
+            });
+
+        function calculateTotalSections() {
+            totalSections = quizData.parts.reduce((total, part) => 
+                total + part.sections.length, 0);
+        }
+
+        function startSectionTimer(timeLimit) {
+            clearInterval(timerInterval);
+            timeRemaining = timeLimit * 60; // Convert minutes to seconds
+            updateTimer();
+            timerInterval = setInterval(() => {
+                timeRemaining--;
+                updateTimer();
+                
+                if (timeRemaining <= 0) {
+                    clearInterval(timerInterval);
+                    submitSection();
+                }
+            }, 1000);
+        }
+
+        function updateTimer() {
+            const minutes = Math.floor(timeRemaining / 60);
+            const seconds = timeRemaining % 60;
+            const timer = document.getElementById('timer');
+            timer.textContent = `Time: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+            
+            // Add warning classes
+            timer.className = 'timer';
+            if (timeRemaining < 60) { // Last minute
+                timer.classList.add('danger');
+            } else if (timeRemaining < 120) { // Last 2 minutes
+                timer.classList.add('warning');
+            }
+        }
+
+        function renderQuiz() {
+            const container = document.getElementById('quiz-container');
+            let html = `<h1>${quizData.title}</h1>`;
+
+            quizData.parts.forEach((part, pIndex) => {
+                html += `<div class="part" id="part-${pIndex}">
+                    <h2>Part ${pIndex + 1}: ${part.title}</h2>`;
+                
+                part.sections.forEach((section, sIndex) => {
+                    html += `<div class="section" id="section-${pIndex}-${sIndex}">
+                        <h3>Section ${sIndex + 1}: ${section.title}</h3>`;
+                    
+                    if (section.passage) {
+                        html += `<div class="passage">${section.passage}</div>`;
+                    }
+                    
+                    section.questions.forEach(question => {
+                        html += `
+                            <div class="question">
+                                <p><strong>Q${question.id}:</strong> ${question.question}</p>
+                                <div class="options">`;
+                        
+                        question.options.forEach((option, index) => {
+                            html += `
+                                <div>
+                                    <input type="radio" 
+                                           name="question${question.id}" 
+                                           id="q${question.id}_${index}"
+                                           value="${option}">
+                                    <label for="q${question.id}_${index}">${option}</label>
+                                </div>`;
+                        });
+                        
+                        html += `</div></div>`;
+                    });
+                    
+                    html += `</div>`;
+                });
+                
+                html += `</div>`;
+            });
+
+            container.innerHTML = html;
+        }
+
+        function showCurrentSection() {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Show current section
+            const currentSectionElement = document.getElementById(
+                `section-${currentPart}-${currentSection}`
+            );
+            currentSectionElement.classList.add('active');
+            
+            // Update section indicator
+            const currentSectionNumber = getCurrentSectionNumber();
+            document.getElementById('section-indicator').textContent = 
+                `${currentSectionNumber}/${totalSections}`;
+            
+            // Start timer for current section
+            const section = quizData.parts[currentPart].sections[currentSection];
+            startSectionTimer(section.timeLimit || 30); // Default 30 minutes if not specified
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+
+        function getCurrentSectionNumber() {
+            let number = 1;
+            for (let p = 0; p < currentPart; p++) {
+                number += quizData.parts[p].sections.length;
+            }
+            return number + currentSection;
+        }
+
+        function submitSection() {
+            clearInterval(timerInterval);
+            
+            // Calculate score for current section
+            const section = quizData.parts[currentPart].sections[currentSection];
+            let score = 0;
+            let totalQuestions = section.questions.length;
+            
+            section.questions.forEach(question => {
+                const selectedAnswer = document.querySelector(
+                    `input[name="question${question.id}"]:checked`
+                );
+                if (selectedAnswer && selectedAnswer.value === question.correctAnswer) {
+                    score++;
+                }
+            });
+            
+            // Store section score
+            sectionScores.push({
+                part: currentPart,
+                section: currentSection,
+                score: score,
+                total: totalQuestions,
+                timeSpent: section.timeLimit * 60 - timeRemaining
+            });
+
+            // Disable all inputs in current section
+            const currentSectionElement = document.getElementById(
+                `section-${currentPart}-${currentSection}`
+            );
+            currentSectionElement.querySelectorAll('input').forEach(input => {
+                input.disabled = true;
+            });
+
+            // Move to next section or finish quiz
+            if (currentSection < quizData.parts[currentPart].sections.length - 1) {
+                currentSection++;
+            } else if (currentPart < quizData.parts.length - 1) {
+                currentPart++;
+                currentSection = 0;
+            } else {
+                finishQuiz();
+                return;
+            }
+
+            showCurrentSection();
+        }
+
+        function finishQuiz() {
+            clearInterval(timerInterval);
+            document.getElementById('submit-btn').style.display = 'none';
+            
+            // Show all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'block';
+            });
+
+            // Calculate total score and mark answers
+            let totalScore = 0;
+            let totalQuestions = 0;
+
+            quizData.parts.forEach((part, partIndex) => {
+                part.sections.forEach((section, sectionIndex) => {
+                    section.questions.forEach(question => {
+                        totalQuestions++;
+                        const selectedAnswer = document.querySelector(`input[name="question${question.id}"]:checked`);
+                        const options = document.querySelectorAll(`input[name="question${question.id}"]`);
+                        
+                        options.forEach(option => {
+                            const label = option.nextElementSibling;
+                            if (option.value === question.correctAnswer) {
+                                label.classList.add('correct-answer');
+                            } else if (selectedAnswer && option.value === selectedAnswer.value && option.value !== question.correctAnswer) {
+                                label.classList.add('incorrect-answer');
+                            }
+                        });
+
+                        // Add explanation if answer was wrong
+                        if (!selectedAnswer || selectedAnswer.value !== question.correctAnswer) {
+                            const questionDiv = document.getElementById(`q${question.id}_0`).closest('.question');
+                            if (!questionDiv.querySelector('.answer-explanation')) {  // Only add if not already present
+                                const explanation = document.createElement('div');
+                                explanation.className = 'answer-explanation';
+                                explanation.textContent = `The correct answer is: ${question.correctAnswer}`;
+                                questionDiv.appendChild(explanation);
+                            }
+                        }
+
+                        if (selectedAnswer && selectedAnswer.value === question.correctAnswer) {
+                            totalScore++;
+                        }
+                    });
+                });
+            });
+            
+            const percentage = ((totalScore / totalQuestions) * 100).toFixed(2);
+            
+            // Generate encouraging message based on score
+            let message = '';
+            if (percentage === 100) {
+                message = "🎉 Perfect score! You're absolutely brilliant!";
+            } else if (percentage >= 90) {
+                message = "🌟 Outstanding work! Nearly perfect!";
+            } else if (percentage >= 80) {
+                message = "👏 Excellent job! You've got a great understanding!";
+            } else if (percentage >= 70) {
+                message = "✨ Good work! Keep up the great effort!";
+            } else if (percentage >= 60) {
+                message = "💪 Not bad! With a bit more practice, you'll ace it!";
+            } else {
+                message = "🌱 This is just the beginning! Keep learning and growing!";
+            }
+
+            // Show final results
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <h3>Quiz Complete!</h3>
+                <p>Final Score: ${totalScore}/${totalQuestions} (${percentage}%)</p>
+                <h4>Section Breakdown:</h4>
+                ${sectionScores.map(score => `
+                    <p>Part ${score.part + 1}, Section ${score.section + 1}:<br>
+                    Score: ${score.score}/${score.total}<br>
+                    Time spent: ${Math.floor(score.timeSpent / 60)}:${(score.timeSpent % 60).toString().padStart(2, '0')}</p>
+                `).join('')}
+                <p style="font-size: 1.2em; margin-top: 20px; color: #2c3e50;">${message}</p>
+            `;
+            resultDiv.style.display = 'block';
+            resultDiv.scrollIntoView({ behavior: 'smooth' });
+
+            // Disable all inputs
+            document.querySelectorAll('input[type="radio"]').forEach(input => {
+                input.disabled = true;
+            });
+        }
+
+        // Progress bar code remains the same
+        function updateProgressBar() {
+            const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = window.scrollY;
+            const progress = (scrolled / totalHeight) * 100;
+            document.querySelector('.progress-bar').style.width = progress + '%';
+            
+            if (progress >= 50 && !messageShown) {
+                const message = document.querySelector('.progress-message');
+                message.style.opacity = '1';
+                messageShown = true;
+                setTimeout(() => {
+                    message.style.opacity = '0';
+                }, 3000);
+            }
+        }
+
+        window.addEventListener('scroll', updateProgressBar);
+        window.addEventListener('resize', updateProgressBar);
+        window.addEventListener('load', updateProgressBar);
+    </script>
+</body>
+</html>
