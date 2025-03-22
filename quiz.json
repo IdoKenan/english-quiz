@@ -11,69 +11,69 @@
             "questions": [
               {
                 "id": 1,
-                "question": "The scientist's hypothesis was _____ by the experimental results.",
+                "question": "The architect's _____ design won first prize in the competition.",
                 "options": [
-                  "confirmed",
-                  "rejected",
-                  "analyzed",
-                  "debated"
+                  "innovative",
+                  "common",
+                  "ordinary",
+                  "traditional"
                 ],
-                "correctAnswer": "confirmed"
+                "correctAnswer": "innovative"
               },
               {
                 "id": 2,
-                "question": "The company's profits _____ significantly after implementing the new marketing strategy.",
+                "question": "The company's new policy aims to _____ workplace efficiency.",
                 "options": [
-                  "decreased",
-                  "stabilized",
-                  "increased",
-                  "fluctuated"
+                  "reduce",
+                  "hinder",
+                  "enhance",
+                  "ignore"
                 ],
-                "correctAnswer": "increased"
+                "correctAnswer": "enhance"
               },
               {
                 "id": 3,
-                "question": "The politician's speech was _____ with enthusiasm by his supporters.",
+                "question": "The detective's _____ observation led to a breakthrough in the case.",
                 "options": [
-                  "received",
-                  "rejected",
-                  "ignored",
-                  "misunderstood"
+                  "careless",
+                  "vague",
+                  "astute",
+                  "superficial"
                 ],
-                "correctAnswer": "received"
+                "correctAnswer": "astute"
               },
               {
                 "id": 4,
-                "question": "The novel's plot was so _____ that readers couldn't put the book down.",
+                "question": "The professor's lecture was so _____ that many students fell asleep.",
                 "options": [
-                  "boring",
-                  "predictable",
                   "engaging",
-                  "confusing"
+                  "fascinating",
+                  "stimulating",
+                  "tedious"
                 ],
-                "correctAnswer": "engaging"
+                "correctAnswer": "tedious"
               },
               {
                 "id": 5,
-                "question": "The ancient ruins were _____ by archaeologists, revealing new insights into the civilization.",
+                "question": "The artist's _____ style made her paintings instantly recognizable.",
                 "options": [
-                  "destroyed",
-                  "renovated",
-                  "excavated",
-                  "ignored"
+                  "generic",
+                  "distinctive",
+                  "ordinary",
+                  "common"
                 ],
-                "correctAnswer": "excavated"
+                "correctAnswer": "distinctive"
               },
               {
                 "id": 6,
-                "question": "The chef's culinary creations were _____ by food critics from around the world.",
+                "question": "The politician's _____ remarks caused a public outcry.",
                 "options": [
-                  "criticized",
-                  "ignored",
-                  "praised",
-                  "misunderstood"
+                  "diplomatic",
+                  "tactful",
+                  "inflammatory",
+                  "considerate"
                 ],
-                "correctAnswer": "praised"
+                "correctAnswer": "inflammatory"
               }
             ]
           },
@@ -83,98 +83,98 @@
             "questions": [
               {
                 "id": 7,
-                "question": "Rephrase: 'The concert was canceled due to inclement weather.'",
+                "question": "Rephrase: 'The concert was postponed due to bad weather.'",
                 "options": [
-                  "The concert proceeded despite the bad weather.",
-                  "Bad weather led to the cancellation of the concert.",
-                  "The weather improved, allowing the concert to take place.",
-                  "The concert was postponed until the weather cleared up."
+                  "The concert occurred despite the bad weather.",
+                  "Bad weather caused the concert to be delayed.",
+                  "The concert was canceled because of good weather.",
+                  "The weather improved, so the concert proceeded."
                 ],
-                "correctAnswer": "Bad weather led to the cancellation of the concert."
+                "correctAnswer": "Bad weather caused the concert to be delayed."
               },
               {
                 "id": 8,
-                "question": "Rephrase: 'She couldn't help but laugh at the situation.'",
+                "question": "Rephrase: 'She is known for her punctuality.'",
                 "options": [
-                  "She found the situation annoying and frustrating.",
-                  "She managed to control her laughter in the situation.",
-                  "The situation made her cry uncontrollably.",
-                  "She was unable to contain her laughter at the situation."
+                  "She is often late to appointments.",
+                  "Her timekeeping skills are poor.",
+                  "She has a reputation for being on time.",
+                  "She doesn't care about being punctual."
                 ],
-                "correctAnswer": "She was unable to contain her laughter at the situation."
+                "correctAnswer": "She has a reputation for being on time."
               },
               {
                 "id": 9,
-                "question": "Rephrase: 'The team worked tirelessly to meet the deadline.'",
+                "question": "Rephrase: 'The book was so engaging that I couldn't put it down.'",
                 "options": [
-                  "The team took frequent breaks while working on the project.",
-                  "The team missed the deadline due to lack of effort.",
-                  "The team put in a great deal of effort to finish on time.",
-                  "The team found the work too challenging to complete."
+                  "The book was boring and easy to stop reading.",
+                  "I found the book difficult to read continuously.",
+                  "The book was uninteresting, so I stopped reading.",
+                  "I was so captivated by the book that I read it non-stop."
                 ],
-                "correctAnswer": "The team put in a great deal of effort to finish on time."
+                "correctAnswer": "I was so captivated by the book that I read it non-stop."
               },
               {
                 "id": 10,
-                "question": "Rephrase: 'The new policy has far-reaching implications.'",
+                "question": "Rephrase: 'He tends to exaggerate when telling stories.'",
                 "options": [
-                  "The new policy only affects a small group of people.",
-                  "The new policy has limited impact on the organization.",
-                  "The new policy will have widespread effects.",
-                  "The new policy will be quickly forgotten."
+                  "He always tells the exact truth in his stories.",
+                  "His stories are usually understated.",
+                  "He often embellishes his narratives.",
+                  "He prefers to keep his stories brief and factual."
                 ],
-                "correctAnswer": "The new policy will have widespread effects."
+                "correctAnswer": "He often embellishes his narratives."
               }
             ]
           },
           {
             "title": "Reading Comprehension",
             "timeLimit": 10,
-            "passage": "Plant communication is a fascinating area of study in the field of botany. Recent research has shown that plants are capable of complex forms of communication, both above and below ground. Through the release of volatile organic compounds (VOCs) into the air, plants can warn their neighbors of impending danger, such as insect attacks or disease. These airborne chemical signals can trigger defensive responses in nearby plants, allowing them to prepare for potential threats.\n\nUnderground, plants communicate through an intricate network of fungal hyphae, often referred to as the 'Wood Wide Web.' This mycorrhizal network connects the root systems of different plants, allowing them to share resources and information. Through this network, plants can transfer nutrients, water, and even warning signals about environmental stresses or pathogen invasions. This underground communication system plays a crucial role in maintaining the health and resilience of entire ecosystems.\n\nThe discovery of plant communication has significant implications for agriculture and ecology. Understanding how plants interact and share information could lead to more sustainable farming practices and better forest management strategies. For example, farmers could potentially use plant communication to enhance crop resistance to pests and diseases without relying heavily on chemical pesticides. In natural ecosystems, this knowledge could help in conservation efforts by providing insights into how plant communities respond to environmental changes and threats.",
+            "passage": "Plants are essential components of ecosystems, playing a crucial role in maintaining the balance of life on Earth. They are primary producers, forming the foundation of most food chains by converting sunlight into energy through photosynthesis. This process not only provides food for other organisms but also releases oxygen as a byproduct, which is vital for most life forms on the planet.\n\nThe diversity of plant species in an ecosystem contributes to its overall health and resilience. Different plants have evolved unique adaptations to thrive in various environments, from arid deserts to lush rainforests. These adaptations include specialized root systems, water-storage tissues, and mechanisms to attract pollinators or deter herbivores. The intricate relationships between plants and other organisms, such as insects, birds, and mammals, form complex webs of interactions that sustain biodiversity.\n\nHuman activities, however, are threatening plant diversity and ecosystem stability worldwide. Deforestation, urbanization, and climate change are leading to habitat loss and altering environmental conditions faster than many plant species can adapt. This loss of plant diversity can have cascading effects throughout the ecosystem, impacting animals that depend on specific plant species for food or shelter. Conservation efforts and sustainable practices are crucial to preserving plant biodiversity and maintaining the health of our planet's ecosystems.",
             "questions": [
               {
                 "id": 11,
-                "question": "What is the primary method of above-ground communication in plants?",
+                "question": "What is the primary role of plants in ecosystems as described in the passage?",
                 "options": [
-                  "Through root systems",
-                  "Using sound waves",
-                  "Release of volatile organic compounds",
-                  "Physical contact between leaves"
+                  "To provide shade for animals",
+                  "To act as primary consumers",
+                  "To serve as primary producers",
+                  "To regulate the water cycle"
                 ],
-                "correctAnswer": "Release of volatile organic compounds"
+                "correctAnswer": "To serve as primary producers"
               },
               {
                 "id": 12,
-                "question": "What is the 'Wood Wide Web' referring to in the context of plant communication?",
+                "question": "According to the passage, how do plants contribute to the atmosphere?",
                 "options": [
-                  "A network of tree branches",
-                  "An internet-based plant database",
-                  "A system of underground water channels",
-                  "A network of fungal hyphae connecting plant roots"
+                  "By absorbing carbon dioxide",
+                  "By releasing methane",
+                  "By producing oxygen as a byproduct of photosynthesis",
+                  "By filtering pollutants from the air"
                 ],
-                "correctAnswer": "A network of fungal hyphae connecting plant roots"
+                "correctAnswer": "By producing oxygen as a byproduct of photosynthesis"
               },
               {
                 "id": 13,
-                "question": "How might understanding plant communication benefit agriculture?",
+                "question": "Which of the following is NOT mentioned as an adaptation of plants to their environment?",
                 "options": [
-                  "By increasing the use of chemical pesticides",
-                  "By eliminating the need for crop rotation",
-                  "By enhancing crop resistance to pests and diseases",
-                  "By promoting monoculture farming"
+                  "Specialized root systems",
+                  "Water-storage tissues",
+                  "Mechanisms to attract pollinators",
+                  "Ability to change color seasonally"
                 ],
-                "correctAnswer": "By enhancing crop resistance to pests and diseases"
+                "correctAnswer": "Ability to change color seasonally"
               },
               {
                 "id": 14,
-                "question": "What role does the mycorrhizal network play in plant ecosystems?",
+                "question": "What is described as a consequence of losing plant diversity according to the passage?",
                 "options": [
-                  "It prevents plants from communicating",
-                  "It only transfers water between plants",
-                  "It allows plants to share resources and information",
-                  "It increases competition between plant species"
+                  "Increased oxygen production",
+                  "Enhanced ecosystem stability",
+                  "Cascading effects throughout the ecosystem",
+                  "Rapid adaptation of remaining plant species"
                 ],
-                "correctAnswer": "It allows plants to share resources and information"
+                "correctAnswer": "Cascading effects throughout the ecosystem"
               }
             ]
           }
@@ -189,69 +189,69 @@
             "questions": [
               {
                 "id": 15,
-                "question": "The mountain climbers were _____ by the treacherous weather conditions.",
+                "question": "The scientist's _____ experiment yielded unexpected results.",
                 "options": [
-                  "encouraged",
-                  "amused",
-                  "thwarted",
-                  "assisted"
+                  "conventional",
+                  "groundbreaking",
+                  "unremarkable",
+                  "flawed"
                 ],
-                "correctAnswer": "thwarted"
+                "correctAnswer": "groundbreaking"
               },
               {
                 "id": 16,
-                "question": "The journalist's article was _____ for its unbiased reporting of the controversial issue.",
+                "question": "The journalist's report was criticized for its lack of _____.",
                 "options": [
-                  "criticized",
-                  "ignored",
-                  "lauded",
-                  "censored"
+                  "bias",
+                  "length",
+                  "objectivity",
+                  "grammar"
                 ],
-                "correctAnswer": "lauded"
+                "correctAnswer": "objectivity"
               },
               {
                 "id": 17,
-                "question": "The company's financial troubles were _____ by poor management decisions.",
+                "question": "The mountain climbers faced _____ conditions during their ascent.",
                 "options": [
-                  "resolved",
-                  "exacerbated",
-                  "ignored",
-                  "concealed"
+                  "favorable",
+                  "mild",
+                  "treacherous",
+                  "predictable"
                 ],
-                "correctAnswer": "exacerbated"
+                "correctAnswer": "treacherous"
               },
               {
                 "id": 18,
-                "question": "The artwork's true value was _____ when experts confirmed its authenticity.",
+                "question": "The company's _____ approach to problem-solving led to innovative solutions.",
                 "options": [
-                  "diminished",
-                  "questioned",
-                  "revealed",
-                  "overlooked"
+                  "traditional",
+                  "rigid",
+                  "unorthodox",
+                  "simplistic"
                 ],
-                "correctAnswer": "revealed"
+                "correctAnswer": "unorthodox"
               },
               {
                 "id": 19,
-                "question": "The diplomat's skillful negotiations helped to _____ tensions between the two countries.",
+                "question": "The actor's _____ performance received a standing ovation.",
                 "options": [
-                  "escalate",
-                  "maintain",
-                  "ignore",
-                  "defuse"
+                  "mediocre",
+                  "lackluster",
+                  "forgettable",
+                  "stellar"
                 ],
-                "correctAnswer": "defuse"
+                "correctAnswer": "stellar"
               },
               {
                 "id": 20,
-                "question": "The student's diligent studying _____ in excellent exam results.",
+                "question": "The ancient artifact was in a remarkable state of _____.",
                 "options": [
-                  "resulted",
-                  "failed",
-                  "culminated",
-                  "interfered"
+                  "decay",
+                  "preservation",
+                  "transformation",
+                  "fragmentation"
                 ],
-                "correctAnswer": "culminated"
+                "correctAnswer": "preservation"
               }
             ]
           },
@@ -261,98 +261,98 @@
             "questions": [
               {
                 "id": 21,
-                "question": "Rephrase: 'The experiment yielded unexpected results.'",
+                "question": "Rephrase: 'The new policy was met with widespread approval.'",
                 "options": [
-                  "The experiment produced anticipated outcomes.",
-                  "The results of the experiment were surprising.",
-                  "The experiment failed to produce any results.",
-                  "The experiment was conducted as expected."
+                  "The new policy was largely rejected.",
+                  "Few people supported the new policy.",
+                  "The new policy was generally well-received.",
+                  "The new policy caused significant controversy."
                 ],
-                "correctAnswer": "The results of the experiment were surprising."
+                "correctAnswer": "The new policy was generally well-received."
               },
               {
                 "id": 22,
-                "question": "Rephrase: 'The company's profits have been steadily declining.'",
+                "question": "Rephrase: 'Despite the challenges, she persevered and succeeded.'",
                 "options": [
-                  "The company's profits have remained stable.",
-                  "The company has been experiencing consistent growth.",
-                  "The company's profits have been gradually decreasing.",
-                  "The company has suddenly become unprofitable."
+                  "She gave up when faced with difficulties.",
+                  "The challenges were too great for her to overcome.",
+                  "She encountered no obstacles on her path to success.",
+                  "She overcame obstacles and achieved her goal."
                 ],
-                "correctAnswer": "The company's profits have been gradually decreasing."
+                "correctAnswer": "She overcame obstacles and achieved her goal."
               },
               {
                 "id": 23,
-                "question": "Rephrase: 'She was instrumental in the project's success.'",
+                "question": "Rephrase: 'The evidence contradicted his initial hypothesis.'",
                 "options": [
-                  "She played a minor role in the project.",
-                  "She hindered the project's progress.",
-                  "She had no involvement in the project.",
-                  "She played a crucial role in the project's success."
+                  "The evidence supported his original theory.",
+                  "His hypothesis was proven correct by the evidence.",
+                  "The findings were inconclusive regarding his hypothesis.",
+                  "The data disproved his original assumption."
                 ],
-                "correctAnswer": "She played a crucial role in the project's success."
+                "correctAnswer": "The data disproved his original assumption."
               },
               {
                 "id": 24,
-                "question": "Rephrase: 'The new law will come into effect next month.'",
+                "question": "Rephrase: 'The painting's provenance was called into question.'",
                 "options": [
-                  "The new law was implemented last month.",
-                  "The new law will be enforced starting next month.",
-                  "The new law has been postponed indefinitely.",
-                  "The new law was rejected by the legislature."
+                  "The painting's origin was definitively established.",
+                  "The authenticity of the painting's history was doubted.",
+                  "The painting's value increased due to its clear history.",
+                  "Experts agreed on the painting's background."
                 ],
-                "correctAnswer": "The new law will be enforced starting next month."
+                "correctAnswer": "The authenticity of the painting's history was doubted."
               }
             ]
           },
           {
             "title": "Reading Comprehension",
             "timeLimit": 10,
-            "passage": "Biodiversity is the variety of life on Earth at all its levels, from genes to ecosystems. It encompasses the evolutionary, ecological, and cultural processes that sustain life. Ecosystems with high biodiversity are generally more resilient and adaptable to environmental changes. This diversity provides a wealth of ecosystem services, including pollination, pest control, nutrient cycling, and climate regulation, which are crucial for human well-being and the planet's health.\n\nHowever, human activities are causing an unprecedented loss of biodiversity. Habitat destruction, pollution, overexploitation of natural resources, and climate change are the primary drivers of this loss. The current rate of species extinction is estimated to be 100 to 1,000 times higher than the natural background rate. This rapid decline in biodiversity has far-reaching consequences for ecosystem functioning, human health, and global economies.\n\nConservation efforts are crucial to mitigate biodiversity loss. These efforts include establishing protected areas, restoring degraded habitats, and implementing sustainable resource management practices. Additionally, there is a growing recognition of the importance of indigenous knowledge in conservation. Many indigenous communities have developed sustainable practices over generations that maintain biodiversity while meeting their needs. Integrating this traditional ecological knowledge with modern scientific approaches can lead to more effective and culturally appropriate conservation strategies.",
+            "passage": "The study of plant biology has revealed fascinating insights into the complex world of flora and their critical role in maintaining ecological balance. Plants have evolved a wide array of strategies to survive and thrive in diverse environments, from the scorching deserts to the frigid tundra. These adaptations include specialized structures like waxy cuticles to prevent water loss, deep root systems to access underground water sources, and symbiotic relationships with fungi and bacteria to enhance nutrient uptake.\n\nOne of the most remarkable aspects of plant biology is the process of photosynthesis. This intricate chemical reaction allows plants to convert sunlight, water, and carbon dioxide into glucose and oxygen. Photosynthesis not only provides energy for the plant but also forms the basis of most food chains on Earth. The oxygen released as a byproduct of this process is essential for the survival of most animal life, including humans. Recent research has also highlighted the role of plants in mitigating climate change through their ability to sequester carbon dioxide from the atmosphere.\n\nHowever, the delicate balance of ecosystems is under threat from human activities. Deforestation, pollution, and climate change are putting unprecedented pressure on plant communities worldwide. The loss of plant biodiversity can have far-reaching consequences, affecting everything from soil stability to the availability of medicinal compounds. Scientists are now working to understand these complex ecological relationships and develop strategies for conservation. This includes efforts to preserve seed banks, restore damaged habitats, and develop more sustainable agricultural practices that can support both human needs and ecological health.",
             "questions": [
               {
                 "id": 25,
-                "question": "What is the primary benefit of high biodiversity in ecosystems?",
+                "question": "Which of the following is NOT mentioned as a plant adaptation in the passage?",
                 "options": [
-                  "It increases the rate of species extinction",
-                  "It makes ecosystems more vulnerable to changes",
-                  "It enhances ecosystem resilience and adaptability",
-                  "It reduces the number of ecosystem services"
+                  "Waxy cuticles",
+                  "Deep root systems",
+                  "Symbiotic relationships with fungi",
+                  "Ability to hibernate"
                 ],
-                "correctAnswer": "It enhances ecosystem resilience and adaptability"
+                "correctAnswer": "Ability to hibernate"
               },
               {
                 "id": 26,
-                "question": "How does the current rate of species extinction compare to the natural background rate?",
+                "question": "According to the passage, how do plants contribute to mitigating climate change?",
                 "options": [
-                  "It is about the same as the natural rate",
-                  "It is 10 to 100 times higher",
-                  "It is 100 to 1,000 times higher",
-                  "It is lower than the natural rate"
+                  "By releasing methane",
+                  "Through carbon sequestration",
+                  "By increasing global temperatures",
+                  "By accelerating the water cycle"
                 ],
-                "correctAnswer": "It is 100 to 1,000 times higher"
+                "correctAnswer": "Through carbon sequestration"
               },
               {
                 "id": 27,
-                "question": "What role does indigenous knowledge play in biodiversity conservation?",
+                "question": "What is described as a consequence of losing plant biodiversity?",
                 "options": [
-                  "It is considered irrelevant to modern conservation efforts",
-                  "It can provide insights for effective and culturally appropriate strategies",
-                  "It is the only approach used in conservation today",
-                  "It focuses solely on exploiting natural resources"
+                  "Increased soil stability",
+                  "Enhanced medicinal compound availability",
+                  "Improved agricultural yields",
+                  "Potential impacts on soil stability and medicinal compounds"
                 ],
-                "correctAnswer": "It can provide insights for effective and culturally appropriate strategies"
+                "correctAnswer": "Potential impacts on soil stability and medicinal compounds"
               },
               {
                 "id": 28,
-                "question": "Which of the following is NOT mentioned as a primary driver of biodiversity loss?",
+                "question": "Which conservation strategy is NOT mentioned in the passage?",
                 "options": [
-                  "Habitat destruction",
-                  "Pollution",
-                  "Natural disasters",
-                  "Climate change"
+                  "Preserving seed banks",
+                  "Restoring damaged habitats",
+                  "Developing sustainable agricultural practices",
+                  "Introducing non-native species to boost diversity"
                 ],
-                "correctAnswer": "Natural disasters"
+                "correctAnswer": "Introducing non-native species to boost diversity"
               }
             ]
           }
