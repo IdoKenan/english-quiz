@@ -11,69 +11,69 @@
             "questions": [
               {
                 "id": 1,
-                "question": "The architect's _____ design won first prize in the competition.",
+                "question": "The students were _____ to learn that the exam had been postponed.",
                 "options": [
-                  "innovative",
-                  "common",
-                  "ordinary",
-                  "traditional"
+                  "elated",
+                  "dejected",
+                  "indifferent",
+                  "anxious"
                 ],
-                "correctAnswer": "innovative"
+                "correctAnswer": "elated"
               },
               {
                 "id": 2,
-                "question": "The company's new policy aims to _____ workplace efficiency.",
+                "question": "The detective's _____ attention to detail helped solve the case.",
                 "options": [
-                  "reduce",
-                  "hinder",
-                  "enhance",
-                  "ignore"
+                  "careless",
+                  "meticulous",
+                  "superficial",
+                  "hasty"
                 ],
-                "correctAnswer": "enhance"
+                "correctAnswer": "meticulous"
               },
               {
                 "id": 3,
-                "question": "The detective's _____ observation led to a breakthrough in the case.",
+                "question": "The politician's speech was _____, lasting for over two hours.",
                 "options": [
-                  "careless",
-                  "vague",
-                  "astute",
-                  "superficial"
+                  "concise",
+                  "brief",
+                  "lengthy",
+                  "succinct"
                 ],
-                "correctAnswer": "astute"
+                "correctAnswer": "lengthy"
               },
               {
                 "id": 4,
-                "question": "The professor's lecture was so _____ that many students fell asleep.",
+                "question": "The mountain climbers faced _____ conditions during their ascent.",
                 "options": [
-                  "engaging",
-                  "fascinating",
-                  "stimulating",
-                  "tedious"
+                  "favorable",
+                  "mild",
+                  "temperate",
+                  "treacherous"
                 ],
-                "correctAnswer": "tedious"
+                "correctAnswer": "treacherous"
               },
               {
                 "id": 5,
-                "question": "The artist's _____ style made her paintings instantly recognizable.",
+                "question": "The company's new policy was met with _____ from the employees.",
                 "options": [
-                  "generic",
-                  "distinctive",
-                  "ordinary",
-                  "common"
+                  "approval",
+                  "resistance",
+                  "indifference",
+                  "enthusiasm"
                 ],
-                "correctAnswer": "distinctive"
+                "correctAnswer": "resistance"
               },
               {
                 "id": 6,
-                "question": "The politician's _____ remarks caused a public outcry.",
+                "question": "The artist's latest work was _____, challenging traditional notions of art.",
                 "options": [
-                  "diplomatic",
-                  "tactful",
-                  "inflammatory",
-                  "considerate"
+                  "conventional",
+                  "ordinary",
+                  "avant-garde",
+                  "traditional"
                 ],
-                "correctAnswer": "inflammatory"
+                "correctAnswer": "avant-garde"
               }
             ]
           },
@@ -83,98 +83,98 @@
             "questions": [
               {
                 "id": 7,
-                "question": "Rephrase: 'The concert was postponed due to bad weather.'",
+                "question": "Rephrase: 'The concert was canceled due to inclement weather.'",
                 "options": [
-                  "The concert occurred despite the bad weather.",
-                  "Bad weather caused the concert to be delayed.",
-                  "The concert was canceled because of good weather.",
-                  "The weather improved, so the concert proceeded."
+                  "The concert proceeded despite the bad weather.",
+                  "Bad weather led to the cancellation of the concert.",
+                  "The weather improved, allowing the concert to take place.",
+                  "The concert was postponed until better weather conditions."
                 ],
-                "correctAnswer": "Bad weather caused the concert to be delayed."
+                "correctAnswer": "Bad weather led to the cancellation of the concert."
               },
               {
                 "id": 8,
-                "question": "Rephrase: 'She is known for her punctuality.'",
+                "question": "Rephrase: 'She couldn't help but laugh at the situation.'",
                 "options": [
-                  "She is often late to appointments.",
-                  "Her timekeeping skills are poor.",
-                  "She has a reputation for being on time.",
-                  "She doesn't care about being punctual."
+                  "She found the situation too serious to laugh.",
+                  "She was unable to control her laughter at the situation.",
+                  "She deliberately avoided laughing at the situation.",
+                  "She was indifferent to the humorous situation."
                 ],
-                "correctAnswer": "She has a reputation for being on time."
+                "correctAnswer": "She was unable to control her laughter at the situation."
               },
               {
                 "id": 9,
-                "question": "Rephrase: 'The book was so engaging that I couldn't put it down.'",
+                "question": "Rephrase: 'The new policy will take effect next month.'",
                 "options": [
-                  "The book was boring and easy to stop reading.",
-                  "I found the book difficult to read continuously.",
-                  "The book was uninteresting, so I stopped reading.",
-                  "I was so captivated by the book that I read it non-stop."
+                  "The new policy will be implemented starting next month.",
+                  "The new policy was in effect last month.",
+                  "The new policy will be cancelled next month.",
+                  "The new policy is currently in effect."
                 ],
-                "correctAnswer": "I was so captivated by the book that I read it non-stop."
+                "correctAnswer": "The new policy will be implemented starting next month."
               },
               {
                 "id": 10,
-                "question": "Rephrase: 'He tends to exaggerate when telling stories.'",
+                "question": "Rephrase: 'Despite the challenges, they persevered.'",
                 "options": [
-                  "He always tells the exact truth in his stories.",
-                  "His stories are usually understated.",
-                  "He often embellishes his narratives.",
-                  "He prefers to keep his stories brief and factual."
+                  "They gave up when faced with challenges.",
+                  "They avoided all challenges in their path.",
+                  "They continued to push forward despite facing difficulties.",
+                  "They encountered no challenges along the way."
                 ],
-                "correctAnswer": "He often embellishes his narratives."
+                "correctAnswer": "They continued to push forward despite facing difficulties."
               }
             ]
           },
           {
             "title": "Reading Comprehension",
             "timeLimit": 10,
-            "passage": "Plants are essential components of ecosystems, playing a crucial role in maintaining the balance of life on Earth. They are primary producers, forming the foundation of most food chains by converting sunlight into energy through photosynthesis. This process not only provides food for other organisms but also releases oxygen as a byproduct, which is vital for most life forms on the planet.\n\nThe diversity of plant species in an ecosystem contributes to its overall health and resilience. Different plants have evolved unique adaptations to thrive in various environments, from arid deserts to lush rainforests. These adaptations include specialized root systems, water-storage tissues, and mechanisms to attract pollinators or deter herbivores. The intricate relationships between plants and other organisms, such as insects, birds, and mammals, form complex webs of interactions that sustain biodiversity.\n\nHuman activities, however, are threatening plant diversity and ecosystem stability worldwide. Deforestation, urbanization, and climate change are leading to habitat loss and altering environmental conditions faster than many plant species can adapt. This loss of plant diversity can have cascading effects throughout the ecosystem, impacting animals that depend on specific plant species for food or shelter. Conservation efforts and sustainable practices are crucial to preserving plant biodiversity and maintaining the health of our planet's ecosystems.",
+            "passage": "The Amazon rainforest, often referred to as the 'lungs of the Earth,' plays a crucial role in maintaining the planet's ecological balance. Spanning across nine countries in South America, this vast expanse of tropical rainforest is home to an incredible diversity of plant and animal species. Scientists estimate that the Amazon contains about 390 billion individual trees divided into 16,000 species, making it one of the most biodiverse regions on Earth.\n\nThe importance of the Amazon extends far beyond its borders. The forest acts as a massive carbon sink, absorbing and storing vast amounts of carbon dioxide from the atmosphere. This process is vital in mitigating the effects of climate change. Additionally, the Amazon's trees release water vapor through transpiration, creating 'flying rivers' that contribute to rainfall patterns across South America and beyond.\n\nHowever, the Amazon faces numerous threats, primarily from deforestation and climate change. Large-scale clearing of land for agriculture, logging, and mining has led to significant habitat loss. This not only affects the local flora and fauna but also disrupts the global climate system. As trees are cut down, they release stored carbon back into the atmosphere, contributing to the greenhouse effect. The loss of this crucial ecosystem could have far-reaching consequences for biodiversity, climate regulation, and the global water cycle.",
             "questions": [
               {
                 "id": 11,
-                "question": "What is the primary role of plants in ecosystems as described in the passage?",
+                "question": "What role does the Amazon rainforest play in the global carbon cycle?",
                 "options": [
-                  "To provide shade for animals",
-                  "To act as primary consumers",
-                  "To serve as primary producers",
-                  "To regulate the water cycle"
+                  "It produces carbon dioxide",
+                  "It has no significant impact on the carbon cycle",
+                  "It acts as a carbon sink, absorbing and storing CO2",
+                  "It only affects local carbon levels"
                 ],
-                "correctAnswer": "To serve as primary producers"
+                "correctAnswer": "It acts as a carbon sink, absorbing and storing CO2"
               },
               {
                 "id": 12,
-                "question": "According to the passage, how do plants contribute to the atmosphere?",
+                "question": "How do the Amazon's trees contribute to rainfall patterns?",
                 "options": [
-                  "By absorbing carbon dioxide",
-                  "By releasing methane",
-                  "By producing oxygen as a byproduct of photosynthesis",
-                  "By filtering pollutants from the air"
+                  "By absorbing groundwater",
+                  "Through photosynthesis",
+                  "By creating 'flying rivers' through transpiration",
+                  "They don't affect rainfall patterns"
                 ],
-                "correctAnswer": "By producing oxygen as a byproduct of photosynthesis"
+                "correctAnswer": "By creating 'flying rivers' through transpiration"
               },
               {
                 "id": 13,
-                "question": "Which of the following is NOT mentioned as an adaptation of plants to their environment?",
+                "question": "What is the primary threat to the Amazon rainforest mentioned in the passage?",
                 "options": [
-                  "Specialized root systems",
-                  "Water-storage tissues",
-                  "Mechanisms to attract pollinators",
-                  "Ability to change color seasonally"
+                  "Overpopulation",
+                  "Natural disasters",
+                  "Deforestation and climate change",
+                  "Invasive species"
                 ],
-                "correctAnswer": "Ability to change color seasonally"
+                "correctAnswer": "Deforestation and climate change"
               },
               {
                 "id": 14,
-                "question": "What is described as a consequence of losing plant diversity according to the passage?",
+                "question": "What potential consequence of Amazon deforestation is NOT mentioned in the passage?",
                 "options": [
-                  "Increased oxygen production",
-                  "Enhanced ecosystem stability",
-                  "Cascading effects throughout the ecosystem",
-                  "Rapid adaptation of remaining plant species"
+                  "Disruption of global climate systems",
+                  "Loss of biodiversity",
+                  "Changes in the global water cycle",
+                  "Increase in oxygen production"
                 ],
-                "correctAnswer": "Cascading effects throughout the ecosystem"
+                "correctAnswer": "Increase in oxygen production"
               }
             ]
           }
@@ -189,69 +189,69 @@
             "questions": [
               {
                 "id": 15,
-                "question": "The scientist's _____ experiment yielded unexpected results.",
+                "question": "The archaeologist's discovery was _____, shedding new light on ancient civilizations.",
                 "options": [
-                  "conventional",
+                  "insignificant",
                   "groundbreaking",
-                  "unremarkable",
-                  "flawed"
+                  "predictable",
+                  "disappointing"
                 ],
                 "correctAnswer": "groundbreaking"
               },
               {
                 "id": 16,
-                "question": "The journalist's report was criticized for its lack of _____.",
+                "question": "The committee's decision was _____, with members split evenly on the issue.",
                 "options": [
-                  "bias",
-                  "length",
-                  "objectivity",
-                  "grammar"
+                  "unanimous",
+                  "divided",
+                  "uncontested",
+                  "harmonious"
                 ],
-                "correctAnswer": "objectivity"
+                "correctAnswer": "divided"
               },
               {
                 "id": 17,
-                "question": "The mountain climbers faced _____ conditions during their ascent.",
+                "question": "The novel's plot was so _____ that readers found it difficult to follow.",
                 "options": [
-                  "favorable",
-                  "mild",
-                  "treacherous",
+                  "straightforward",
+                  "simple",
+                  "convoluted",
                   "predictable"
                 ],
-                "correctAnswer": "treacherous"
+                "correctAnswer": "convoluted"
               },
               {
                 "id": 18,
-                "question": "The company's _____ approach to problem-solving led to innovative solutions.",
+                "question": "The CEO's _____ leadership style inspired loyalty among employees.",
                 "options": [
-                  "traditional",
-                  "rigid",
-                  "unorthodox",
-                  "simplistic"
+                  "authoritarian",
+                  "charismatic",
+                  "indecisive",
+                  "apathetic"
                 ],
-                "correctAnswer": "unorthodox"
+                "correctAnswer": "charismatic"
               },
               {
                 "id": 19,
-                "question": "The actor's _____ performance received a standing ovation.",
+                "question": "The defendant's testimony was _____, full of inconsistencies and contradictions.",
                 "options": [
-                  "mediocre",
-                  "lackluster",
-                  "forgettable",
-                  "stellar"
+                  "credible",
+                  "consistent",
+                  "unreliable",
+                  "convincing"
                 ],
-                "correctAnswer": "stellar"
+                "correctAnswer": "unreliable"
               },
               {
                 "id": 20,
-                "question": "The ancient artifact was in a remarkable state of _____.",
+                "question": "The company's financial report was _____, providing a clear picture of its performance.",
                 "options": [
-                  "decay",
-                  "preservation",
-                  "transformation",
-                  "fragmentation"
+                  "vague",
+                  "misleading",
+                  "comprehensive",
+                  "superficial"
                 ],
-                "correctAnswer": "preservation"
+                "correctAnswer": "comprehensive"
               }
             ]
           },
@@ -261,98 +261,98 @@
             "questions": [
               {
                 "id": 21,
-                "question": "Rephrase: 'The new policy was met with widespread approval.'",
+                "question": "Rephrase: 'The experiment yielded unexpected results.'",
                 "options": [
-                  "The new policy was largely rejected.",
-                  "Few people supported the new policy.",
-                  "The new policy was generally well-received.",
-                  "The new policy caused significant controversy."
+                  "The experiment produced anticipated outcomes.",
+                  "The results of the experiment were surprising.",
+                  "The experiment failed to produce any results.",
+                  "The experiment's results were inconclusive."
                 ],
-                "correctAnswer": "The new policy was generally well-received."
+                "correctAnswer": "The results of the experiment were surprising."
               },
               {
                 "id": 22,
-                "question": "Rephrase: 'Despite the challenges, she persevered and succeeded.'",
+                "question": "Rephrase: 'She has a penchant for classical music.'",
                 "options": [
-                  "She gave up when faced with difficulties.",
-                  "The challenges were too great for her to overcome.",
-                  "She encountered no obstacles on her path to success.",
-                  "She overcame obstacles and achieved her goal."
+                  "She dislikes classical music.",
+                  "She is indifferent to classical music.",
+                  "She has a strong liking for classical music.",
+                  "She is unfamiliar with classical music."
                 ],
-                "correctAnswer": "She overcame obstacles and achieved her goal."
+                "correctAnswer": "She has a strong liking for classical music."
               },
               {
                 "id": 23,
-                "question": "Rephrase: 'The evidence contradicted his initial hypothesis.'",
+                "question": "Rephrase: 'The team's victory was a foregone conclusion.'",
                 "options": [
-                  "The evidence supported his original theory.",
-                  "His hypothesis was proven correct by the evidence.",
-                  "The findings were inconclusive regarding his hypothesis.",
-                  "The data disproved his original assumption."
+                  "The team's victory was unexpected.",
+                  "The team's defeat was certain.",
+                  "The outcome of the game was uncertain.",
+                  "The team's win was inevitable from the start."
                 ],
-                "correctAnswer": "The data disproved his original assumption."
+                "correctAnswer": "The team's win was inevitable from the start."
               },
               {
                 "id": 24,
-                "question": "Rephrase: 'The painting's provenance was called into question.'",
+                "question": "Rephrase: 'The new law will come into force next year.'",
                 "options": [
-                  "The painting's origin was definitively established.",
-                  "The authenticity of the painting's history was doubted.",
-                  "The painting's value increased due to its clear history.",
-                  "Experts agreed on the painting's background."
+                  "The new law will be repealed next year.",
+                  "The new law is currently in effect.",
+                  "The new law will become effective next year.",
+                  "The new law was enforced last year."
                 ],
-                "correctAnswer": "The authenticity of the painting's history was doubted."
+                "correctAnswer": "The new law will become effective next year."
               }
             ]
           },
           {
             "title": "Reading Comprehension",
             "timeLimit": 10,
-            "passage": "The study of plant biology has revealed fascinating insights into the complex world of flora and their critical role in maintaining ecological balance. Plants have evolved a wide array of strategies to survive and thrive in diverse environments, from the scorching deserts to the frigid tundra. These adaptations include specialized structures like waxy cuticles to prevent water loss, deep root systems to access underground water sources, and symbiotic relationships with fungi and bacteria to enhance nutrient uptake.\n\nOne of the most remarkable aspects of plant biology is the process of photosynthesis. This intricate chemical reaction allows plants to convert sunlight, water, and carbon dioxide into glucose and oxygen. Photosynthesis not only provides energy for the plant but also forms the basis of most food chains on Earth. The oxygen released as a byproduct of this process is essential for the survival of most animal life, including humans. Recent research has also highlighted the role of plants in mitigating climate change through their ability to sequester carbon dioxide from the atmosphere.\n\nHowever, the delicate balance of ecosystems is under threat from human activities. Deforestation, pollution, and climate change are putting unprecedented pressure on plant communities worldwide. The loss of plant biodiversity can have far-reaching consequences, affecting everything from soil stability to the availability of medicinal compounds. Scientists are now working to understand these complex ecological relationships and develop strategies for conservation. This includes efforts to preserve seed banks, restore damaged habitats, and develop more sustainable agricultural practices that can support both human needs and ecological health.",
+            "passage": "Symbiosis is a fascinating biological phenomenon where two different species live in close association, often to the benefit of both parties. One of the most intriguing examples of symbiosis in the plant world is the relationship between certain species of acacia trees and ants. This mutualistic relationship has evolved over millions of years and showcases the intricate interconnectedness of ecosystems.\n\nIn this symbiotic relationship, the acacia tree provides food and shelter for the ants. The tree produces specialized structures called Beltian bodies, which are rich in proteins and lipids, serving as a food source for the ants. Additionally, the tree's large, hollow thorns serve as nesting sites for the ant colonies. In return, the ants act as the tree's personal army, fiercely defending it against herbivores and competing plants. They patrol the tree, attacking any animal that attempts to feed on the leaves or bark. The ants also clear the area around the base of the tree, preventing other plants from competing for resources.\n\nThis relationship demonstrates the complex adaptations that can arise through coevolution. The acacia has developed specialized structures specifically to support its ant inhabitants, while the ants have become entirely dependent on the tree for their survival. This interdependence highlights the delicate balance in ecosystems and the potential far-reaching effects of biodiversity loss. If either the acacia or the ant species were to decline, it could have cascading effects on the entire ecosystem, affecting other plants and animals that interact with these species.",
             "questions": [
               {
                 "id": 25,
-                "question": "Which of the following is NOT mentioned as a plant adaptation in the passage?",
+                "question": "What type of symbiotic relationship exists between the acacia tree and ants?",
                 "options": [
-                  "Waxy cuticles",
-                  "Deep root systems",
-                  "Symbiotic relationships with fungi",
-                  "Ability to hibernate"
+                  "Parasitism",
+                  "Commensalism",
+                  "Mutualism",
+                  "Amensalism"
                 ],
-                "correctAnswer": "Ability to hibernate"
+                "correctAnswer": "Mutualism"
               },
               {
                 "id": 26,
-                "question": "According to the passage, how do plants contribute to mitigating climate change?",
+                "question": "What specialized structures does the acacia tree produce as food for the ants?",
                 "options": [
-                  "By releasing methane",
-                  "Through carbon sequestration",
-                  "By increasing global temperatures",
-                  "By accelerating the water cycle"
+                  "Nectaries",
+                  "Beltian bodies",
+                  "Pollen sacs",
+                  "Leaf buds"
                 ],
-                "correctAnswer": "Through carbon sequestration"
+                "correctAnswer": "Beltian bodies"
               },
               {
                 "id": 27,
-                "question": "What is described as a consequence of losing plant biodiversity?",
+                "question": "How do the ants benefit the acacia tree?",
                 "options": [
-                  "Increased soil stability",
-                  "Enhanced medicinal compound availability",
-                  "Improved agricultural yields",
-                  "Potential impacts on soil stability and medicinal compounds"
+                  "By providing nutrients to the soil",
+                  "By pollinating the tree's flowers",
+                  "By defending against herbivores and competing plants",
+                  "By improving the tree's photosynthesis"
                 ],
-                "correctAnswer": "Potential impacts on soil stability and medicinal compounds"
+                "correctAnswer": "By defending against herbivores and competing plants"
               },
               {
                 "id": 28,
-                "question": "Which conservation strategy is NOT mentioned in the passage?",
+                "question": "What does this symbiotic relationship demonstrate about ecosystems?",
                 "options": [
-                  "Preserving seed banks",
-                  "Restoring damaged habitats",
-                  "Developing sustainable agricultural practices",
-                  "Introducing non-native species to boost diversity"
+                  "Ecosystems are simple and predictable",
+                  "Species interactions are always harmful",
+                  "Biodiversity is unimportant for ecosystem stability",
+                  "Ecosystems involve complex interdependencies"
                 ],
-                "correctAnswer": "Introducing non-native species to boost diversity"
+                "correctAnswer": "Ecosystems involve complex interdependencies"
               }
             ]
           }
